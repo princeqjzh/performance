@@ -1,7 +1,7 @@
 package com.oneapm.qa;
 
-import java.io.*;
 import java.util.StringTokenizer;
+import java.io.*;
 
 /**
  * 用途：读入内存、CPU原始数据，转化成json格式数据
@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
  *       输入参数 agrus1:原始数据文件 agrus2:保存目标数据文件
  * Created by michael on 2015/9/30.
  */
-public class DataConsumer {
+public class DataGenerator {
     public static void main(String [] argus){
         String content = readFileByLines(argus[0]);
         writeFileByString(content,argus[1]);
@@ -80,7 +80,4 @@ public class DataConsumer {
             ioe.printStackTrace();
         }
     }
-
-
-
 }
