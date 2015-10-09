@@ -74,7 +74,7 @@ public class DataGenerator {
 
             fw = new FileWriter(file);
             BufferedWriter out = new BufferedWriter(fw);
-            out.write(content,0,content.length()-1);
+            out.write(content,0,content.length());
             out.close();
         }catch (IOException ioe){
             ioe.printStackTrace();
