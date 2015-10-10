@@ -6,3 +6,6 @@ DataGenerator用途
 4. 读入原始文件路径 与 生成JSON格式文件路径 由参数传入
 5. 使用mvn clean package 生成jar包
 6. 生成jar包位置： target\DataGenerater-1.0.jar
+7. 参数歧义点调整：
+    a. 数据个数调整，以最少个数数据为准；
+    b. cpu > 100的数据过滤；
